@@ -1,0 +1,30 @@
+.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Field {
+  width: 100%;
+  height: 100%;
+}
+
+.Square {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.Point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+}
