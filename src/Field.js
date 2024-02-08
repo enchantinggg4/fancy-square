@@ -20,8 +20,8 @@ function Field({ speed, radius }) {
                 const x0 = point.current.offsetLeft;
                 const y0 = point.current.offsetTop;
 
-                let x = radius * Math.cos(angle) + x0;
-                let y = radius * Math.sin(angle) + y0;
+                let x = radius * Math.cos(angle) + x0 - square.current.clientWidth / 2;
+                let y = radius * Math.sin(angle) + y0 - square.current.clientHeight / 2;
 
                 angle += frameTime * speed * Math.PI / 180;
 
